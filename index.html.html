@@ -1,0 +1,146 @@
+<html>
+<head>
+
+<style sheet="text/css">
+
+ body
+{
+background-color:tan;
+} 
+.box
+{
+background:linear-gradient(to right,red,yellow,green);
+height:450px;
+width:350px;
+ 
+position:relative;
+top:80px;
+left:40%;
+} 
+
+.display
+{
+background-color:#222;
+width:320px;
+position:relative;
+left:15px;
+top:20px;
+height:75px;
+}
+.display input
+{
+position:relative;
+left:2px;
+top:2px;
+height:70px;
+color:black;
+background-color:#bccd95;
+font-size:21px;
+text-align:center;
+width:316px;
+} 
+.keys
+{
+position:relative;
+top:15px;
+}
+.button
+{
+width:65px;
+height:50px;
+border:none;
+margin-left:15px;
+cursor:pointer;
+border-top:2px solid transparent;
+    padding:auto;
+}
+
+     
+</style>
+
+
+<script>
+function c(val)
+{
+document.getElementById("d").value=val;
+}
+function v(val)
+{
+document.getElementById("d").value+=val;
+}
+function e() 
+{ 
+try 
+{ 
+  c(eval(document.getElementById("d").value)) 
+} 
+catch(e) 
+{
+  c('Error') 
+} 
+}  
+</script>
+
+</head>
+<title>
+||this is calculator||
+</title>
+<body>
+<div class="box">
+<div class="display"><input type="text" readonly size="18" id="d"></div>
+<div class="keys">
+    <p><input type="button" class="button" 
+
+    value="mrc" onclick='c("CREATED")'>
+    <input type="button" class="button" 
+
+    value="m-" onclick='c(".....BY......")'>
+    <input type="button" class="button" value="
+    m+" onclick='c("KAMELSH KUMAR BIND")'>
+    <input type="button" class="button" 
+
+    value="/" onclick='v("/")'></p>
+    <p><input type="button" class="button" 
+
+    value="7" onclick='v("7")'><input type="button" 
+
+    class="button" value="8" onclick='v("8")'>
+    <input type="button" class="button" value="9" 
+
+    onclick='v("9")'><input type="button" 
+
+    class="button" value="*" onclick='v("*")'></p>
+    <p><input type="button" class="button" 
+
+    value="4" onclick='v("4")'><input type="button" 
+
+    class="button" value="5" onclick='v("5")'>
+    <input type="button" class="button" value="6" 
+
+    onclick='v("6")'><input type="button" 
+
+    class="button" value="-" onclick='v("-")'></p>
+    <p><input type="button" class="button" 
+
+    value="1" onclick='v("1")'><input type="button" 
+
+    class="button" value="2" onclick='v("2")'>
+    <input type="button" class="button" value="3" 
+
+    onclick='v("3")'><input type="button" 
+
+    class="button" value="+" onclick='v("+")'></p>
+    <p><input type="button" class="button" 
+
+    value="0" onclick='v("0")'><input type="button" 
+
+    class="button" value="." onclick='v(".")'>
+    <input type="button" class="button" value="C" 
+
+    onclick='c("")'><input type="button" 
+
+    class="button" value="=" onclick='e()'></p>
+</div>
+</div>
+</body>
+</html>
